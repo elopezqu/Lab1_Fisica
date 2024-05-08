@@ -20,6 +20,16 @@ def hallarTiempo():
             time.sleep(2)
             print("El tiempo es:",distancia/velocidad,"s")
 
+# Método para hallar el tiempo 
+def hallarVelocidad():
+    distancia = int(input("Ingrese la distancia(metros): "))
+    if(distancia >= 0):
+        tiempo = int(input("Ingrese el tiempo(segundos): "))
+        if(tiempo > 0):
+            print("Hallando VELOCIDAD .... : ")
+            time.sleep(2)
+            print("La velocidad es:",distancia/tiempo,"m/s")
+
 
 # Main
 print("Bienvenido a su calculadora de MRU")
@@ -37,7 +47,7 @@ else:
         print("Se ha seleccionado TIEMPO")
         time.sleep(1)
         hallarTiempo()
-    
-
-
-
+    else:
+        print("Se ha seleccionado VELOCIDAD")
+        time.sleep(1)
+        hallarVelocidad()
