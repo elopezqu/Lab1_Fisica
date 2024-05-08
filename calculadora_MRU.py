@@ -2,103 +2,103 @@ import time
 
 # Método para hallar la distancia 
 def hallarDistancia():
-    tiempo = int(input("Ingrese el tiempo(segundos): "))
-    if(tiempo > 0):
-        velocidad = int(input("Ingrese la velocidad(metros/segundos): "))
-        if(velocidad > 0):
+    tiempo = float(input("Ingrese el tiempo (segundos): "))
+    if tiempo > 0:
+        velocidad = float(input("Ingrese la velocidad (metros/segundos): "))
+        if velocidad > 0:
             print("Hallando DISTANCIA .... : ")
             time.sleep(2)
-            print("La distancia es:",velocidad*tiempo,"m")
+            print("La distancia es:", velocidad * tiempo, "m")
         else:
-            while(velocidad <= 0):
-                print("!!El valor ingresado no se puede ingresar a VELOCIDAD!!")
-                velocidad = int(input("Ingrese la velocidad(metros/segundos): "))
+            while velocidad <= 0:
+                print("El valor ingresado no se puede ingresar a VELOCIDAD")
+                velocidad = float(input("Ingrese la velocidad (metros/segundos): "))
             print("Hallando DISTANCIA .... : ")
             time.sleep(2)
-            print("La distancia es:",velocidad*tiempo,"m")
+            print("La distancia es:", velocidad * tiempo, "m")
     else:
-        while(tiempo <= 0):
-            print("!!El valor ingresado no se puede ingresar a TIEMPO!!")
-            tiempo = int(input("Ingrese el tiempo(segundos): "))
-        velocidad = int(input("Ingrese la velocidad(metros/segundos): "))
-        if(velocidad > 0):
+        while tiempo <= 0:
+            print("El valor ingresado no se puede ingresar a TIEMPO")
+            tiempo = float(input("Ingrese el tiempo (segundos): "))
+        velocidad = float(input("Ingrese la velocidad (metros/segundos): "))
+        if velocidad > 0:
             print("Hallando DISTANCIA .... : ")
             time.sleep(2)
-            print("La distancia es:",velocidad*tiempo,"m")
+            print("La distancia es:", velocidad * tiempo, "m")
         else:
-            while(velocidad <= 0):
-                print("!!El valor ingresado no se puede ingresar a VELOCIDAD!!")
-                velocidad = int(input("Ingrese la velocidad(metros/segundos): "))
+            while velocidad <= 0:
+                print("El valor ingresado no se puede ingresar a VELOCIDAD")
+                velocidad = float(input("Ingrese la velocidad (metros/segundos): "))
             print("Hallando DISTANCIA .... : ")
             time.sleep(2)
-            print("La distancia es:",velocidad*tiempo,"m")
+            print("La distancia es:", velocidad * tiempo, "m")
 
 
 # Método para hallar el tiempo 
 def hallarTiempo():
-    distancia = int(input("Ingrese la distancia(metros): "))
-    if(distancia >= 0):
-        velocidad = int(input("Ingrese la velocidad(metros/segundos): "))
-        if(velocidad > 0):
+    distancia = float(input("Ingrese la distancia (metros): "))
+    if distancia >= 0:
+        velocidad = float(input("Ingrese la velocidad (metros/segundos): "))
+        if velocidad > 0:
             print("Hallando TIEMPO .... : ")
             time.sleep(2)
-            print("El tiempo es:",distancia/velocidad,"s")
+            print("El tiempo es:", distancia / velocidad, "s")
         else:
-            while(velocidad <= 0):
-                print("!!El valor ingresado no se puede ingresar a VELOCIDAD!!")
-                velocidad = int(input("Ingrese la velocidad(metros/segundos): "))
+            while velocidad <= 0:
+                print("El valor ingresado no se puede ingresar a VELOCIDAD")
+                velocidad = float(input("Ingrese la velocidad (metros/segundos): "))
             print("Hallando TIEMPO .... : ")
             time.sleep(2)
-            print("El tiempo es:",distancia/velocidad,"s")
+            print("El tiempo es:", distancia / velocidad, "s")
     else:
-        while(distancia < 0):
-            print("!!El valor ingresado no se puede ingresar a DISTANCIA!!")
-            distancia = int(input("Ingrese la distancia(metros): "))
-        velocidad = int(input("Ingrese la velocidad(metros/segundos): "))
-        if(velocidad > 0):
+        while distancia < 0:
+            print("El valor ingresado no se puede ingresar a DISTANCIA")
+            distancia = float(input("Ingrese la distancia (metros): "))
+        velocidad = float(input("Ingrese la velocidad (metros/segundos): "))
+        if velocidad > 0:
             print("Hallando TIEMPO .... : ")
             time.sleep(2)
-            print("El tiempo es:",distancia/velocidad,"s")
+            print("El tiempo es:", distancia / velocidad, "s")
         else:
-            while(velocidad <= 0):
-                print("!!El valor ingresado no se puede ingresar a VELOCIDAD!!")
-                velocidad = int(input("Ingrese la velocidad(metros/segundos): "))
+            while velocidad <= 0:
+                print("El valor ingresado no se puede ingresar a VELOCIDAD")
+                velocidad = float(input("Ingrese la velocidad (metros/segundos): "))
             print("Hallando TIEMPO .... : ")
             time.sleep(2)
-            print("El tiempo es:",distancia/velocidad,"s")
+            print("El tiempo es:", distancia / velocidad, "s")
 
-# Método para hallar el tiempo 
+# Método para hallar la velocidad 
 def hallarVelocidad():
-    distancia = int(input("Ingrese la distancia(metros): "))
-    if(distancia >= 0):
-        tiempo = int(input("Ingrese el tiempo(segundos): "))
-        if(tiempo > 0):
+    distancia = float(input("Ingrese la distancia (metros): "))
+    if distancia >= 0:
+        tiempo = float(input("Ingrese el tiempo (segundos): "))
+        if tiempo > 0:
             print("Hallando VELOCIDAD .... : ")
             time.sleep(2)
-            print("La velocidad es:",distancia/tiempo,"m/s")
+            print("La velocidad es:", distancia / tiempo, "m/s")
         else:
-            while(tiempo <= 0):
-                print("!!El valor ingresado no se puede ingresar a TIEMPO!!")
-                tiempo = int(input("Ingrese el tiempo(segundos): "))
+            while tiempo <= 0:
+                print("El valor ingresado no se puede ingresar a TIEMPO")
+                tiempo = float(input("Ingrese el tiempo (segundos): "))
             print("Hallando VELOCIDAD .... : ")
             time.sleep(2)
-            print("La velocidad es:",distancia/tiempo,"m/s")
+            print("La velocidad es:", distancia / tiempo, "m/s")
     else:
-        while(distancia < 0):
-            print("!!El valor ingresado no se puede ingresar a DISTANCIA!!")
-            distancia = int(input("Ingrese la distancia(metros): "))
-        tiempo = int(input("Ingrese el tiempo(segundos): "))
-        if(tiempo <= 0):
+        while distancia < 0:
+            print("El valor ingresado no se puede ingresar a DISTANCIA")
+            distancia = float(input("Ingrese la distancia (metros): "))
+        tiempo = float(input("Ingrese el tiempo (segundos): "))
+        if tiempo <= 0:
             print("Hallando VELOCIDAD .... : ")
             time.sleep(2)
-            print("La velocidad es:",distancia/tiempo,"m/s")
+            print("La velocidad es:", distancia / tiempo, "m/s")
         else:
-            while(tiempo <= 0):
-                print("!!El valor ingresado no se puede ingresar a TIEMPO!!")
-                tiempo = int(input("Ingrese el tiempo(segundos): "))
+            while tiempo <= 0:
+                print("El valor ingresado no se puede ingresar a TIEMPO")
+                tiempo = float(input("Ingrese el tiempo (segundos): "))
             print("Hallando VELOCIDAD .... : ")
             time.sleep(2)
-            print("La velocidad es:",distancia/tiempo,"m/s")
+            print("La velocidad es:", distancia / tiempo, "m/s")
 
 # Main
 print("Bienvenido a su calculadora de MRU")
