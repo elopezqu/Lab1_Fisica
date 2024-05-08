@@ -63,13 +63,12 @@ if(operacion==1):
     print("Se ha seleccionado VARIACIÓN DE LA DISTANCIA")
     time.sleep(1)
     hallarDistancia()
+elif(operacion == 2):
+    print("Se ha seleccionado VARIACIÓN DEL TIEMPO")
+    time.sleep(1)
+    hallarTiempo()
 else:
-    if(operacion == 2):
-        print("Se ha seleccionado VARIACIÓN DEL TIEMPO")
-        time.sleep(1)
-        hallarTiempo()
-    else:
-        print("Se ha seleccionado VELOCIDAD")
-        time.sleep(1)
-        hallarVelocidad()
+    print("Se ha seleccionado VELOCIDAD")
+    time.sleep(1)
+    hallarVelocidad()
       
