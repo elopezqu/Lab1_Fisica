@@ -8,7 +8,7 @@ def hallarVeloFinal():
             aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
             print("Hallando la VELOCIDAD FINAL .... : ")
             time.sleep(2)
-            print("La velocidad final es:",veloInicial+ (aceleracion*tiempo),"m/s")
+            print("La velocidad final es:",veloInicial + (aceleracion*tiempo),"m/s")
         else:
             while(tiempo <= 0):
                 print("!!El valor ingresado no corresponde a TIEMPO!!")
@@ -16,7 +16,7 @@ def hallarVeloFinal():
             aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
             print("Hallando la VELOCIDAD FINAL .... : ")
             time.sleep(2)
-            print("La velocidad final es:",veloInicial+ (aceleracion*tiempo),"m/s")
+            print("La velocidad final es:",veloInicial + (aceleracion*tiempo),"m/s")
     else:
         while(veloInicial < 0):
             print("!!El valor ingresado no corresponde a VELOCIDAD INICIAL!!")
@@ -26,7 +26,7 @@ def hallarVeloFinal():
             aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
             print("Hallando la VELOCIDAD FINAL .... : ")
             time.sleep(2)
-            print("La velocidad final es:",veloInicial+ (aceleracion*tiempo),"m/s")
+            print("La velocidad final es:",veloInicial + (aceleracion*tiempo),"m/s")
         else:
             while(tiempo <= 0):
                 print("!!El valor ingresado no corresponde a TIEMPO!!")
@@ -34,7 +34,46 @@ def hallarVeloFinal():
             aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
             print("Hallando la VELOCIDAD FINAL .... : ")
             time.sleep(2)
-            print("La velocidad final es:",veloInicial+ (aceleracion*tiempo),"m/s")
+            print("La velocidad final es:",veloInicial + (aceleracion*tiempo),"m/s")
+
+# Metodo para hallar la velocidad inicial
+def hallarVeloInicial():
+    veloFinal = float(input("Ingrese la velocidad final(metros/segundos): "))
+    if(veloFinal != 0):
+        tiempo = float(input("Ingrese variacion de tiempo(segundos): "))
+        if(tiempo > 0):
+            aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
+            print("Hallando la VELOCIDAD INICIAL .... : ")
+            time.sleep(2)
+            print("La velocidad inicial es:",veloFinal - (aceleracion*tiempo),"m/s")
+        else:
+            while(tiempo <= 0):
+                print("!!El valor ingresado no corresponde a TIEMPO!!")
+                tiempo = float(input("Ingrese variacion de tiempo(segundos): "))
+            aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
+            print("Hallando la VELOCIDAD INICIAL .... : ")
+            time.sleep(2)
+            print("La velocidad inicial es:",veloFinal - (aceleracion*tiempo),"m/s")
+    else:
+        while(veloFinal == 0):
+            print("!!El valor ingresado no corresponde a VELOCIDAD FINAL!!")
+            veloFinal = float(input("Ingrese la velocidad final(metros/segundos): "))
+        tiempo = float(input("Ingrese variacion de tiempo(segundos): "))
+        if(tiempo > 0):
+            aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
+            print("Hallando la VELOCIDAD INICIAL .... : ")
+            time.sleep(2)
+            print("La velocidad inicial es:",veloFinal - (aceleracion*tiempo),"m/s")
+        else:
+            while(tiempo <= 0):
+                print("!!El valor ingresado no corresponde a TIEMPO!!")
+                tiempo = float(input("Ingrese variacion de tiempo(segundos): "))
+            aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
+            print("Hallando la VELOCIDAD INICIAL .... : ")
+            time.sleep(2)
+            print("La velocidad inicial es:",veloFinal - (aceleracion*tiempo),"m/s")
+
+
 
 
 # Main
