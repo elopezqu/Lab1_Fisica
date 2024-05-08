@@ -83,6 +83,111 @@ def formula_general(a, b, c):
     elif x2 >= 0:
       return x2
 
+# Metodo para hallar Velocidad Inicial
+def hallarVeloInicial():
+    tiempo = float(input("Ingrese variacion de tiempo(segundos): "))
+    if(tiempo > 0):
+        distancia = float(input("Ingrese variacion de la distancia(metros): "))
+        if(distancia >= 0):
+            aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
+            print("Hallando VELOCIDAD INICIAL .... : ")
+            time.sleep(2)
+            print("La velocidad inicial es: ",(distancia-((aceleracion/2)*tiempo**2))/tiempo,"m/s")
+        else:
+            while(distancia < 0):
+                print("!!El valor ingresado no corresponde a VARIACION DE LA DISTANCIA!!")
+                distancia = float(input("Ingrese variacion de la distancia(metros): "))
+            aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
+            print("Hallando VELOCIDAD INICIAL .... : ")
+            time.sleep(2)
+            print("La velocidad inicial es: ",(distancia-((aceleracion/2)*tiempo**2))/tiempo,"m/s")
+    else:
+        while(tiempo <= 0):
+            print("!!El valor ingresado no corresponde a VARIACION DEL TIEMPO!!")
+            tiempo = float(input("Ingrese variacion de tiempo(segundos): "))
+        distancia = float(input("Ingrese variacion de la distancia(metros): "))
+        if(distancia >= 0):
+            aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
+            print("Hallando VELOCIDAD INICIAL .... : ")
+            time.sleep(2)
+            print("La velocidad inicial es: ",(distancia-((aceleracion/2)*tiempo**2))/tiempo,"m/s")
+        else:
+            while(distancia < 0):
+                print("!!El valor ingresado no corresponde a VARIACION DE LA DISTANCIA!!")
+                distancia = float(input("Ingrese variacion de la distancia(metros): "))
+            aceleracion = float(input("Ingrese la aceleración(metros/segundos al cuadrado): "))
+            print("Hallando VELOCIDAD INICIAL .... : ")
+            time.sleep(2)
+            print("La velocidad inicial es: ",(distancia-((aceleracion/2)*tiempo**2))/tiempo,"m/s")
+
+# Metodo para hallar la aceleracion
+def hallarAceleracion():
+    tiempo = float(input("Ingrese variacion de tiempo(segundos): "))
+    if(tiempo > 0):
+        distancia = float(input("Ingrese variacion de la distancia(metros): "))
+        if(distancia >= 0):
+            veloInicial = float(input("Ingrese la velocidad inicial(metros/segundos): "))
+            if(veloInicial >= 0):
+              print("Hallando ACELERACION .... : ")
+              time.sleep(2)
+              print("La aceleracion es: ",2*(distancia-(veloInicial*tiempo))/tiempo**2,"m/s^2")
+            else:
+                while(veloInicial < 0):
+                  print("!!El valor ingresado no corresponde a VELOCIDAD INICIAL!!") 
+                  veloInicial = float(input("Ingrese la velocidad inicial(metros/segundos): "))
+                print("Hallando ACELERACION .... : ")
+                time.sleep(2)
+                print("La aceleracion es: ",2*(distancia-(veloInicial*tiempo))/tiempo**2,"m/s^2")  
+        else:
+            while(distancia < 0):
+                print("!!El valor ingresado no corresponde a VARIACION DE LA DISTANCIA!!")
+                distancia = float(input("Ingrese variacion de la distancia(metros): "))
+            veloInicial = float(input("Ingrese la velocidad inicial(metros/segundos): "))
+            if(veloInicial >= 0):
+              print("Hallando ACELERACION .... : ")
+              time.sleep(2)
+              print("La aceleracion es: ",2*(distancia-(veloInicial*tiempo))/tiempo**2,"m/s^2")
+            else:
+                while(veloInicial < 0):
+                  print("!!El valor ingresado no corresponde a VELOCIDAD INICIAL!!") 
+                  veloInicial = float(input("Ingrese la velocidad inicial(metros/segundos): "))
+                print("Hallando ACELERACION .... : ")
+                time.sleep(2)
+                print("La aceleracion es: ",2*(distancia-(veloInicial*tiempo))/tiempo**2,"m/s^2")  
+    else:
+        while(tiempo <= 0):
+            print("!!El valor ingresado no corresponde a VARIACION DEL TIEMPO!!")
+            tiempo = float(input("Ingrese variacion de tiempo(segundos): "))
+        distancia = float(input("Ingrese variacion de la distancia(metros): "))
+        if(distancia >= 0):
+            veloInicial = float(input("Ingrese la velocidad inicial(metros/segundos): "))
+            if(veloInicial >= 0):
+              print("Hallando ACELERACION .... : ")
+              time.sleep(2)
+              print("La aceleracion es: ",2*(distancia-(veloInicial*tiempo))/tiempo**2,"m/s^2")
+            else:
+                while(veloInicial < 0):
+                  print("!!El valor ingresado no corresponde a VELOCIDAD INICIAL!!") 
+                  veloInicial = float(input("Ingrese la velocidad inicial(metros/segundos): "))
+                print("Hallando ACELERACION .... : ")
+                time.sleep(2)
+                print("La aceleracion es: ",2*(distancia-(veloInicial*tiempo))/tiempo**2,"m/s^2")  
+        else:
+            while(distancia < 0):
+                print("!!El valor ingresado no corresponde a VARIACION DE LA DISTANCIA!!")
+                distancia = float(input("Ingrese variacion de la distancia(metros): "))
+            veloInicial = float(input("Ingrese la velocidad inicial(metros/segundos): "))
+            if(veloInicial >= 0):
+              print("Hallando ACELERACION .... : ")
+              time.sleep(2)
+              print("La aceleracion es: ",2*(distancia-(veloInicial*tiempo))/tiempo**2,"m/s^2")
+            else:
+                while(veloInicial < 0):
+                  print("!!El valor ingresado no corresponde a VELOCIDAD INICIAL!!") 
+                  veloInicial = float(input("Ingrese la velocidad inicial(metros/segundos): "))
+                print("Hallando ACELERACION .... : ")
+                time.sleep(2)
+                print("La aceleracion es: ",2*(distancia-(veloInicial*tiempo))/tiempo**2,"m/s^2")  
 
 # Main
 print("Bienvenido a su calculadora de MRUV")
@@ -108,3 +213,12 @@ elif(operacion == 2):
         print("Se ha seleccionado VARIACIÓN DEL TIEMPO")
         time.sleep(1)
         hallarTiempo()
+elif(operacion == 3):
+        print("Se ha seleccionado VELOCIDAD INICIAL")
+        time.sleep(1)
+        hallarVeloInicial()
+elif(operacion == 4):
+        print("Se ha seleccionado ACELERACION")
+        time.sleep(1)
+        hallarAceleracion()
+
